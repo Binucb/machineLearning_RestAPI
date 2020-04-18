@@ -8,4 +8,8 @@ from firstApp import models
 class PersonDetailViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.PersonDetailSerializer
     queryset = models.PersonDetail.objects.all()
+
+class MovieRatingViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.MovieRatingSerializer
+    queryset = models.MovieRating.objects.all()
     

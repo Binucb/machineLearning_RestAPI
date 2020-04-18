@@ -5,6 +5,7 @@ from firstApp import views
 
 router = DefaultRouter()
 router.register('person',views.PersonDetailViewSet)
+router.register('movie',views.MovieRatingViewSet)
 
 urlpatterns = [
     path('',include(router.urls)),
